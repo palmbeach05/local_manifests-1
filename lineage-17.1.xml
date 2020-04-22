@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="samsung-msm8916-dev"
+           fetch="https://github.com"
+           review="review.msm8916.com"
+           revision="lineage-17.1" />
+
+ <!-- Samsung MSM8916 Common Repos -->
+  <project path="device/samsung/msm8916-common" name="samsung-msm8916-dev/android_device_samsung_msm8916-common" groups="device" remote="samsung-msm8916-dev"/>
+
+ <!-- Samsung Hardware Repo -->
+  <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" />
+
+ <!-- Common Samsung MSM8916 Kernel -->
+  <project path="kernel/samsung/msm8916" name="samsung-msm8916-dev/android_kernel_samsung_msm8916" remote="samsung-msm8916-dev"/>
+
+ <!-- Vendor Trees (for all devices) -->
+  <project path="vendor/samsung" name="samsung-msm8916-dev/android_vendor_samsung" groups="device" remote="samsung-msm8916-dev"/>
+
+ <!-- Qcom audio  -->
+  <remove-project name="LineageOS/android_hardware_qcom_audio"/>
+  <project path="hardware/qcom/audio-caf/msm8916" name="samsung-msm8916-dev/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" revision="lineage-17.1-caf-msm8916" remote="samsung-msm8916-dev"/>
+
+ <!-- Dependencies -->
+  <project path="external/sony/boringssl-compat" name="LineageOS/android_external_sony_boringssl-compat" remote="github" revision="lineage-15.1"/>
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings"/>
+
+ <!-- Galaxy A3
+  <project path="device/samsung/a3lte" name="samsung-msm8916-dev/android_device_samsung_a3lte" groups="device" remote="samsung-msm8916-dev"/>  -->
+  <project path="device/samsung/a3ulte" name="samsung-msm8916-dev/android_device_samsung_a3ulte" groups="device" remote="samsung-msm8916-dev"/>
+  <!-- <project path="device/samsung/a33g" name="samsung-msm8916-dev/android_device_samsung_a33g" groups="device" remote="samsung-msm8916-dev"/>  -->
+
+ <!-- Galaxy Grand Prime/Fortuna
+  <project path="device/samsung/fortuna3g" name="samsung-msm8916-dev/android_device_samsung_fortuna3g" groups="device" remote="samsung-msm8916-dev"/>
+  <project path="device/samsung/fortunalteub" name="samsung-msm8916-dev/android_device_samsung_fortunalteub" groups="device" remote="samsung-msm8916-dev"/>
+  <project path="device/samsung/fortunave3g" name="samsung-msm8916-dev/android_device_samsung_fortunave3g" groups="device" remote="samsung-msm8916-dev"/>
+  <project path="device/samsung/gprimelte" name="samsung-msm8916-dev/android_device_samsung_gprimelte" groups="device" remote="samsung-msm8916-dev"/>
+  <project path="device/samsung/gprimeltespr" name="samsung-msm8916-dev/android_device_samsung_gprimeltespr" groups="device" remote="samsung-msm8916-dev"/>
+  <project path="device/samsung/gprimeltetfnvzw" name="samsung-msm8916-dev/android_device_samsung_gprimeltetfnvzw" groups="device" remote="samsung-msm8916-dev"/>
+  <project path="device/samsung/gprimeltexx" name="samsung-msm8916-dev/android_device_samsung_gprimeltexx" groups="device" remote="samsung-msm8916-dev"/>
+  <project path="device/samsung/gprimeltezt" name="samsung-msm8916-dev/android_device_samsung_gprimeltezt" groups="device" remote="samsung-msm8916-dev"/> -->
+
+ <!-- Galaxy Tab E
+  <project path="device/samsung/gtelwifiue" name="samsung-msm8916-dev/android_device_samsung_gtelwifiue" groups="device" remote="samsung-msm8916-dev"/>
+  <project path="device/samsung/gtesqltespr" name="samsung-msm8916-dev/android_device_samsung_gtesqltespr" groups="device" remote="samsung-msm8916-dev"/> -->
+
+ <!-- Galaxy Tab A
+  <project path="device/samsung/gt58wifi" name="samsung-msm8916-dev/android_device_samsung_gt58wifi" groups="device" remote="samsung-msm8916-dev"/>
+  <project path="device/samsung/gt510wifi" name="samsung-msm8916-dev/android_device_samsung_gt510wifi" groups="device" remote="samsung-msm8916-dev"/>
+  <project path="device/samsung/gt510lte" name="samsung-msm8916-dev/android_device_samsung_gt510lte" groups="device" remote="samsung-msm8916-dev"/> -->
+
+ <!-- Galaxy J5 (2015) -->
+  <project path="device/samsung/j53gxx" name="samsung-msm8916-dev/android_device_samsung_j53gxx" groups="device" remote="samsung-msm8916-dev"/>
+  <project path="device/samsung/j5lte" name="samsung-msm8916-dev/android_device_samsung_j5lte" groups="device" remote="samsung-msm8916-dev"/>
+  <project path="device/samsung/j5ltechn" name="samsung-msm8916-dev/android_device_samsung_j5ltechn" groups="device" remote="samsung-msm8916-dev"/>
+  <project path="device/samsung/j5nlte" name="samsung-msm8916-dev/android_device_samsung_j5nlte" groups="device" remote="samsung-msm8916-dev"/>
+
+ <!-- Galaxy J5 (2016) -->
+  <project path="device/samsung/j5xnlte" name="samsung-msm8916-dev/android_device_samsung_j5xnlte" groups="device" remote="samsung-msm8916-dev"/>
+
+ <!-- Galaxy On7
+  <project path="device/samsung/o7prolte" name="samsung-msm8916-dev/android_device_samsung_o7prolte" groups="device" remote="samsung-msm8916-dev"/> -->
+
+ <!-- Galaxy J7 
+  <project path="device/samsung/j7ltespr" name="samsung-msm8916-dev/android_device_samsung_j7ltespr" groups="device" remote="samsung-msm8916-dev"/>
+  <project path="device/samsung/j7ltechn" name="samsung-msm8916-dev/android_device_samsung_j7ltechn" groups="device" remote="samsung-msm8916-dev"/> -->
+
+ <!-- Galaxy S4 Mini 
+  <project path="device/samsung/serranove3g" name="samsung-msm8916-dev/android_device_samsung_serranove3g" groups="device" remote="samsung-msm8916-dev"/>
+  <project path="device/samsung/serranovelte" name="samsung-msm8916-dev/android_device_samsung_serranovelte" groups="device" remote="samsung-msm8916-dev"/> -->
+
+</manifest>
