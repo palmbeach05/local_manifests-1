@@ -3,7 +3,6 @@
 
   <remote  name="samsung-msm8916-dev"
            fetch="https://github.com"
-           review="review.msm8916.com"
            revision="lineage-17.1" />
 
  <!-- Samsung MSM8916 Common Repos -->
